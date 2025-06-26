@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  color: #2a2a2a;
+  scroll-behavior: smooth;
+}
+
+.elegant-font {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #1c1b2a, #322d4f);
+}
+
+.link-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.link-hover:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700;
+  transform: scale(1.05);
+}
+
+.active-link {
+  background-color: #ffd700;
+  color: #1c1b2a !important;
+  font-weight: 600;
+}
+
+.floating-logo {
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.fancy-border {
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.animated-header {
+  animation: fadeInSlide 0.6s ease-out both;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-image-fit {
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-image-fit {
+    height: 300px;
+  }
+}
+
+
+/* Zoom on hover effect */
+.zoom-hover {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.zoom-hover img {
+  transition: transform 0.5s ease;
+}
+
+.zoom-hover:hover img {
+  transform: scale(1.08);
+}
+
+.zoom-wrapper {
+  overflow: hidden;
+}
+
+.zoom-on-hover {
+  transition: transform 0.6s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.08);
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #c59d2d;
+  color: white;
+}
+
+
